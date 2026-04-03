@@ -1,9 +1,9 @@
-export const API_BASE_URL = 'https://dev.natureland.hipster-virtual.com';
+export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://dev.natureland.hipster-virtual.com';
 
 // Backend login (daily token caching is handled client-side).
-export const LOGIN_EMAIL = 'react@hipster-inc.com';
-export const LOGIN_PASSWORD = 'React@123';
-export const LOGIN_KEY_PASS = '07ba959153fe7eec778361bf42079439';
+export const LOGIN_EMAIL = process.env.REACT_APP_LOGIN_EMAIL || 'react@hipster-inc.com';
+export const LOGIN_PASSWORD = process.env.REACT_APP_LOGIN_PASSWORD || 'React@123';
+export const LOGIN_KEY_PASS = process.env.REACT_APP_LOGIN_KEY_PASS || '07ba959153fe7eec778361bf42079439';
 
 // Assessment note: outlets can be ignored for now, but backend endpoints still require outlet params.
 export const DEFAULT_OUTLET_ID = 1;
