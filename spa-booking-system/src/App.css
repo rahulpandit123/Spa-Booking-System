@@ -1,0 +1,19 @@
+.app-loading {
+  padding: 24px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.app-error {
+  padding: 24px;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.app-error__details {
+  margin-top: 12px;
+  background: #f3f4f6;
+  padding: 12px;
+  border-radius: 8px;
+  color: #111827;
+  overflow: auto;
+}

@@ -1,0 +1,129 @@
+.tsc-root {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  height: 100%;
+  min-height: 0;
+}
+
+.tsc-header {
+  grid-column: 2;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.tsc-header-inner {
+  position: relative;
+  height: 52px;
+  will-change: transform;
+}
+
+.tsc-time-header {
+  width: 66%;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tsc-time-header__label {
+  padding: 14px 10px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.tsc-scroll {
+  grid-column: 2;
+  overflow: auto;
+  position: relative;
+  min-height: 0;
+  height: 100%;
+}
+
+.tsc-canvas {
+  position: relative;
+}
+
+.tsc-hline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #f0f1f3;
+  pointer-events: none;
+}
+
+.tsc-vline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid #f0f1f3;
+  pointer-events: none;
+}
+
+.tsc-therapist-label {
+  position: absolute;
+  top: 8px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.tsc-time-label {
+  position: absolute;
+  left: 8px;
+  font-size: 12px;
+  color: #6b7280;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+
+.tsc-booking {
+  position: absolute;
+  border-radius: 8px;
+  padding: 6px 8px;
+  color: white;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tsc-booking:hover {
+  filter: brightness(1.04);
+}
+
+.tsc-booking__topline {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.tsc-pill {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 11px;
+  flex: 0 0 auto;
+}
+
+.tsc-muted {
+  opacity: 0.9;
+}
+
